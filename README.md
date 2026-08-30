@@ -54,12 +54,9 @@ Inventory coverage alone wasn't enough.
 If a product has 2 days of inventory but the supplier takes 4 days to deliver, there is still a potential stockout problem.
 
 I therefore calculated:
-
 **Lead-Time Demand = Average Daily Sales × Lead Time**
 
 This helped me understand how much inventory could be consumed while waiting for replenishment.
-
----
 
 ### 3. I calculated reorder requirements
 Using inventory levels, demand, lead time, and target stock, I calculated the amount that needed to be reordered.
@@ -131,22 +128,22 @@ After getting the analysis working, I wanted to reduce the manual work involved 
 I created an automated workflow:
 
 ```text
-Inventory Data
-      ↓
-Python + Pandas
-      ↓
+   Inventory Data
+        ↓
+  Python + Pandas
+        ↓
 Inventory Calculations
-      ↓
-Risk & Priority
-      ↓
+        ↓
+  Risk & Priority
+        ↓
 Reorder Recommendations
-      ↓
-Google Sheets
-      ↓
+        ↓
+   Google Sheets
+        ↓
 Google Apps Script
-      ↓
-Alerts
-      ↓
+        ↓
+     Alerts
+        ↓
 Email Notifications
 ```
 
